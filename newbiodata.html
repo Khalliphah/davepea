@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>User Information Form</h2>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="text" class="form-control" id="dob" placeholder="Enter your date of birth (DD/MM/YYYY)" required>
+            </div>
+            <div class="form-group">
+                <label for="stateOfOrigin">State of Origin</label>
+                <input type="text" class="form-control" id="stateOfOrigin" placeholder="Enter your state of origin" required>
+            </div>
+            <div class="form-group">
+                <label for="maritalStatus">Marital Status</label>
+                <select class="form-control" id="maritalStatus" required>
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="schoolAttended">School Attended</label>
+                <input type="text" class="form-control" id="schoolAttended" placeholder="Enter the school you attended" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Department</label>
+                <input type="text" class="form-control" id="department" placeholder="Enter your department" required>
+            </div>
+            <div class="form-group">
+                <label for="yearOfGraduation">Year of Graduation</label>
+                <input type="text" class="form-control" id="yearOfGraduation" placeholder="Enter your year of graduation" required>
+            </div>
+            <div class="form-group">
+                <label for="houseAddress">House Address</label>
+                <input type="text" class="form-control" id="houseAddress" placeholder="Enter your house address" required>
+            </div>
+            <div class="form-group">
+                <label for="matriculationNumber">Matriculation Number</label>
+                <input type="number" class="form-control" id="matriculationNumber" placeholder="Enter your matriculation number" required>
+            </div>
+            <div class="form-group">
+                <label for="employmentStatus">Employment Status</label>
+                <select class="form-control" id="employmentStatus" required>
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div id="result" class="mt-5"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
